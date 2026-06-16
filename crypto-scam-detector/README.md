@@ -122,15 +122,11 @@ Redeploy after changing env vars: `cd frontend && vercel deploy --prod`
 
 ### Backend (Render)
 
-1. Push this repo to GitHub
-2. On [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint** → connect repo
-3. Set environment variables:
-   - `ETHERSCAN_API_KEY` — your Etherscan key
-   - `FRONTEND_URL` — `https://frontend-phi-three-83.vercel.app`
-   - `CHAINABUSE_API_KEY` — optional
-4. Deploy — service URL will be `https://crypto-scam-detector-api.onrender.com`
-
-The frontend is already configured to call that Render API URL.
+1. On [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**
+2. Connect repo `Manorajkrishan/crypto-scam-detector-`
+3. **Branch:** `main` | **Blueprint path:** `render.yaml` (repo root)
+4. When prompted, set `ETHERSCAN_API_KEY` (from [etherscan.io/myapikey](https://etherscan.io/myapikey))
+5. `FRONTEND_URL` is pre-set to `https://frontend-phi-three-83.vercel.app`
 
 ## Disclaimer
 
