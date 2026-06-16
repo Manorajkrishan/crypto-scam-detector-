@@ -1,0 +1,44 @@
+{
+  "rug_pull_dataset": {
+    "total_incidents": 1048575,
+    "chains": {
+      "ETH": 2290,
+      "BSC": 70
+    },
+    "rug_types": {
+      "Transaction Limitation": 2083,
+      "Fee": 157,
+      "Token Generation": 41,
+      "Destroy Token": 23,
+      "Combination": 15,
+      "Token Distribution": 13,
+      "Funds Manipulation": 11,
+      "External Call": 7,
+      "LP Drain": 5,
+      "Vulnerability": 2
+    },
+    "unique_addresses": 2360,
+    "known_loss_total_usd": 199884934.0,
+    "avg_loss_usd": 2630064.9210526315,
+    "sample_addresses": [
+      "0xc3c51c071e5f1eca09575ac35e90956ae3b27311",
+      "0x71c349eecc025f1b618f7674ad5efcb9dda135e9",
+      "0x05c9b6764a153faf4262d3885a845af694775953",
+      "0x820ba67398c3ea745eb8766fd3f444a92d4de316",
+      "0x4876c5892d975780405f1b73802221b2850feb8e"
+    ]
+  },
+  "ethereum_fraud_dataset": {
+    "total_wallets": 9841,
+    "fraud_wallets": 2179,
+    "legitimate_wallets": 7662,
+    "fraud_rate_pct": 22.14,
+    "avg_sent_tnx_fraud": 5.173932996787517,
+    "avg_sent_tnx_legit": 147.4301748890629,
+    "avg_received_tnx_fraud": 23.775585130793942,
+    "avg_received_tnx_legit": 203.49438788827982,
+    "avg_ether_balance_fraud": 9.521323065888945,
+    "avg_ether_balance_legit": 1894.8446917795811,
+    "feature_columns": 48
+  }
+}
