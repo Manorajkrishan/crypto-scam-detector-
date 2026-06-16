@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+
+# ML
+ml-model/dataset/ethereum_fraud/
+ml-model/dataset/rug_pull/.git/
+__pycache__/
+*.pyc
+.ml-venv/
+
+# Large generated — run: npm run setup (from backend/)
+# backend/data/scam_addresses.json

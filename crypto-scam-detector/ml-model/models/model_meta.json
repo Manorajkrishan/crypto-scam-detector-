@@ -1,0 +1,69 @@
+{
+  "features": [
+    "Avg min between sent tnx",
+    "Avg min between received tnx",
+    "Time Diff between first and last (Mins)",
+    "Sent tnx",
+    "Received Tnx",
+    "Number of Created Contracts",
+    "Unique Received From Addresses",
+    "Unique Sent To Addresses",
+    "min value received",
+    "max value received ",
+    "avg val received",
+    "min val sent",
+    "max val sent",
+    "avg val sent",
+    "total transactions (including tnx to create contract",
+    "total Ether sent",
+    "total ether received",
+    "total ether balance",
+    " Total ERC20 tnxs",
+    " ERC20 total Ether received",
+    " ERC20 total ether sent",
+    " ERC20 uniq sent addr",
+    " ERC20 uniq rec addr"
+  ],
+  "auc_score": 0.987,
+  "classification_report": {
+    "0": {
+      "precision": 0.9632258064516129,
+      "recall": 0.9739073711676451,
+      "f1-score": 0.9685371391501784,
+      "support": 1533.0
+    },
+    "1": {
+      "precision": 0.9045346062052506,
+      "recall": 0.8692660550458715,
+      "f1-score": 0.8865497076023391,
+      "support": 436.0
+    },
+    "accuracy": 0.9507364144235653,
+    "macro avg": {
+      "precision": 0.9338802063284317,
+      "recall": 0.9215867131067583,
+      "f1-score": 0.9275434233762587,
+      "support": 1969.0
+    },
+    "weighted avg": {
+      "precision": 0.9502296849140741,
+      "recall": 0.9507364144235653,
+      "f1-score": 0.9503824818851413,
+      "support": 1969.0
+    }
+  },
+  "top_features": {
+    "Time Diff between first and last (Mins)": 0.14277549961054442,
+    "avg val received": 0.12315122573103483,
+    "total ether received": 0.08780952231462619,
+    "Avg min between received tnx": 0.08049964633119135,
+    "Unique Received From Addresses": 0.07087093518157148,
+    "max value received ": 0.05959797791234373,
+    "min value received": 0.055594597559488486,
+    "total transactions (including tnx to create contract": 0.04482563606279693,
+    "Received Tnx": 0.040802385008925364,
+    "Sent tnx": 0.03771306197145466
+  },
+  "rug_pull_addresses_loaded": 2361,
+  "training_samples": 7872
+}

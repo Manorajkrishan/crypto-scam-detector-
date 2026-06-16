@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: crypto-scam-detector-api
+    runtime: node
+    plan: free
+    buildCommand: >-
+      cd crypto-scam-detector/backend && npm install &&
+      cd ../ml-model && pip install -r requirements.txt && python train_model.py &&
+      cd ../backend && node scripts/exportScamDb.js
+    startCommand: cd crypto-scam-detector/backend && npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FRONTEND_URL
+        value: https://frontend-phi-three-83.vercel.app
+      - key: ETHERSCAN_API_KEY
+        sync: false
+      - key: CHAINABUSE_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: PYTHON_PATH
+        value: python
