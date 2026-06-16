@@ -3,11 +3,9 @@ services:
     name: crypto-scam-detector-api
     runtime: node
     plan: free
-    buildCommand: >-
-      cd crypto-scam-detector/backend && npm install &&
-      cd ../ml-model && pip install -r requirements.txt && python train_model.py &&
-      cd ../backend && node scripts/exportScamDb.js
-    startCommand: cd crypto-scam-detector/backend && npm start
+    rootDir: crypto-scam-detector/backend
+    buildCommand: npm install
+    startCommand: npm start
     healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
@@ -21,4 +19,4 @@ services:
       - key: DATABASE_URL
         sync: false
       - key: PYTHON_PATH
-        value: python
+        value: python3
